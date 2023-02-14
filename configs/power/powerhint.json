@@ -172,49 +172,49 @@
         {
             "PowerHint": "LAUNCH",
             "Node": "CPUMaxFreq",
-            "Duration": 5000,
+            "Duration": 3000,
             "Value": "2314000"
         },
         {
             "PowerHint": "LAUNCH",
             "Node": "CPUMinFreq",
-            "Duration": 5000,
+            "Duration": 3000,
             "Value": "2314000"
         },
 	{
             "PowerHint": "LAUNCH",
             "Node": "CPULittleClusterUpRateLimit",
-            "Duration": 5000,
+            "Duration": 3000,
             "Value": "1000"
         },
 	{
             "PowerHint": "LAUNCH",
             "Node": "CPULittleClusterDownRateLimit",
-            "Duration": 5000,
+            "Duration": 3000,
             "Value": "10000"
         },
 	{
             "PowerHint": "LAUNCH",
             "Node": "CPUBigClusterUpRateLimit",
-            "Duration": 5000,
+            "Duration": 3000,
             "Value": "1000"
         },
 	{
             "PowerHint": "LAUNCH",
             "Node": "CPUBigClusterDownRateLimit",
-            "Duration": 5000,
+            "Duration": 3000,
             "Value": "10000"
         },
         {
             "PowerHint": "LAUNCH",
             "Node": "LPMDisable",
-            "Duration": 5000,
+            "Duration": 3000,
             "Value": "1"
         },
         {
             "PowerHint": "LAUNCH",
             "Node": "GPUPowerPolicy",
-            "Duration": 5000,
+            "Duration": 3000,
             "Value": "always_on"
         },
         {
