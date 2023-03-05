@@ -75,8 +75,6 @@ on init
     ## SCSC BT
     chown bluetooth bluetooth /sys/module/scsc_bt/parameters/bluetooth_address
 
-    write /dev/stune/schedtune.boost 0
-
     chown system system /dev/cpuset/tasks
     chown system system /dev/cpuset/cgroup.procs
     chmod 0664 /dev/cpuset/tasks
