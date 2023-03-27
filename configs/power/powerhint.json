@@ -91,11 +91,20 @@
             "ResetOnInit": true
         },
         {
-            "Name": "TASchedtuneBoost",
-            "Path": "/dev/stune/top-app/schedtune.boost",
+            "Name": "UclampTAMin",
+            "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
             "Values": [
                 "30",
                 "5"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "UclampTALatency",
+            "Path": "/dev/cpuset/top-app/uclamp.latency_sensitive",
+            "Values": [
+                "1",
+                "0"
             ],
             "ResetOnInit": true
         },
@@ -207,6 +216,12 @@
         },
         {
             "PowerHint": "LAUNCH",
+            "Node": "UclampTALatency",
+            "Duration": 3000,
+            "Value": "1"
+        },
+        {
+            "PowerHint": "LAUNCH",
             "Node": "GPUPowerPolicy",
             "Duration": 3000,
             "Value": "always_on"
@@ -297,7 +312,7 @@
         },
         {
             "PowerHint": "EXPENSIVE_RENDERING",
-            "Node": "TASchedtuneBoost",
+            "Node": "UclampTAMin",
             "Duration": 0,
             "Value": "30"
         },
