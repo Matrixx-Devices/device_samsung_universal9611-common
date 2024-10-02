@@ -159,12 +159,6 @@
         },
         {
             "PowerHint": "INTERACTION",
-            "Node": "TASchedtuneBoost",
-            "Duration": 0,
-            "Value": "30"
-        },
-        {
-            "PowerHint": "INTERACTION",
             "Node": "GPUMinFreq",
             "Duration": 0,
             "Value": "455000"
@@ -287,19 +281,25 @@
             "PowerHint": "INTERACTIVE",
             "Node": "CPUMaxFreq",
             "Duration": 5000,
-            "Value": "2314000"
+            "Value": "2106000"
         },
         {
             "PowerHint": "INTERACTIVE",
             "Node": "CPUMinFreq",
             "Duration": 5000,
-            "Value": "1976000"
+            "Value": "1456000"
         },
         {
             "PowerHint": "DOUBLE_TAP_TO_WAKE",
             "Node": "DoubleTapToWakeEnable",
             "Duration": 0,
             "Value": "aot_enable,1"
+        },
+        {
+            "PowerHint": "EXPENSIVE_RENDERING",
+            "Node": "TASchedtuneBoost",
+            "Duration": 0,
+            "Value": "30"
         },
         {
             "PowerHint": "EXPENSIVE_RENDERING",
