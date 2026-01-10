@@ -95,7 +95,7 @@
             "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
             "Values": [
                 "50",
-                "30",
+                "10",
                 "5"
             ],
             "ResetOnInit": true
@@ -178,6 +178,12 @@
         },
         {
             "PowerHint": "INTERACTION",
+            "Node": "UclampTAMin",
+            "Duration": 0,
+            "Value": "10"
+        },
+        {
+            "PowerHint": "INTERACTION",
             "Node": "GPUMinFreq",
             "Duration": 0,
             "Value": "455000"
@@ -190,9 +196,15 @@
         },
         {
             "PowerHint": "LAUNCH",
+            "Node": "CPUMinFreq",
+            "Duration": 3000,
+            "Value": "2314000"
+        },
+        {
+            "PowerHint": "LAUNCH",
             "Node": "GPUMinFreq",
             "Duration": 3000,
-            "Value": "455000"
+            "Value": "764000"
         },
         {
             "PowerHint": "LAUNCH",
@@ -331,12 +343,6 @@
             "Node": "DoubleTapToWakeEnable",
             "Duration": 0,
             "Value": "aot_enable,1"
-        },
-        {
-            "PowerHint": "EXPENSIVE_RENDERING",
-            "Node": "UclampTAMin",
-            "Duration": 0,
-            "Value": "30"
         },
         {
             "PowerHint": "EXPENSIVE_RENDERING",
