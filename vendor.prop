@@ -39,6 +39,7 @@ dalvik.vm.dex2oat64.enabled=true
 ## Graphics
 debug.sf.enable_transaction_tracing=false
 debug.sf.latch_unsignaled=1
+persist.sys.sf.color_mode=0
 debug.sf.treat_170m_as_sRGB=1
 debug.sf.enable_gl_backpressure=0
 ro.hardware.egl=mali
