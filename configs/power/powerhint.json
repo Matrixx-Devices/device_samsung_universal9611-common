@@ -303,6 +303,18 @@
         },
         {
             "PowerHint": "EXPENSIVE_RENDERING",
+            "Node": "CPUMaxFreq",
+            "Duration": 0,
+            "Value": "2314000"
+        },
+        {
+            "PowerHint": "EXPENSIVE_RENDERING",
+            "Node": "CPUMinFreq",
+            "Duration": 0,
+            "Value": "1976000"
+        },
+        {
+            "PowerHint": "EXPENSIVE_RENDERING",
             "Node": "GPUMinFreq",
             "Duration": 0,
             "Value": "764000"
