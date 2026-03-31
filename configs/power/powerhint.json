@@ -35,6 +35,42 @@
             ],
             "ResetOnInit": true
         },
+	{
+            "Name": "CPULittleClusterUpRateLimit",
+            "Path": "/sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us",
+            "Values": [
+                "1000",
+                "5000"
+            ],
+            "ResetOnInit": true
+        },
+	{
+            "Name": "CPULittleClusterDownRateLimit",
+            "Path": "/sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us",
+            "Values": [
+                "10000",
+                "5000"
+            ],
+            "ResetOnInit": true
+        },
+	{
+            "Name": "CPUBigClusterUpRateLimit",
+            "Path": "/sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us",
+            "Values": [
+                "1000",
+                "5000"
+            ],
+            "ResetOnInit": true
+        },
+	{
+            "Name": "CPUBigClusterDownRateLimit",
+            "Path": "/sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us",
+            "Values": [
+                "10000",
+                "5000"
+            ],
+            "ResetOnInit": true
+        },
         {
             "Name": "LPMDisable",
             "Path": "/sys/module/cpuidle/parameters/off",
@@ -144,6 +180,30 @@
             "Node": "CPUMinFreq",
             "Duration": 5000,
             "Value": "2314000"
+        },
+	{
+            "PowerHint": "LAUNCH",
+            "Node": "CPULittleClusterUpRateLimit",
+            "Duration": 5000,
+            "Value": "1000"
+        },
+	{
+            "PowerHint": "LAUNCH",
+            "Node": "CPULittleClusterDownRateLimit",
+            "Duration": 5000,
+            "Value": "10000"
+        },
+	{
+            "PowerHint": "LAUNCH",
+            "Node": "CPUBigClusterUpRateLimit",
+            "Duration": 5000,
+            "Value": "1000"
+        },
+	{
+            "PowerHint": "LAUNCH",
+            "Node": "CPUBigClusterDownRateLimit",
+            "Duration": 5000,
+            "Value": "10000"
         },
         {
             "PowerHint": "LAUNCH",
