@@ -35,7 +35,7 @@
             ],
             "ResetOnInit": true
         },
-	{
+        {
             "Name": "CPULittleClusterUpRateLimit",
             "Path": "/sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us",
             "Values": [
@@ -44,7 +44,7 @@
             ],
             "ResetOnInit": true
         },
-	{
+        {
             "Name": "CPULittleClusterDownRateLimit",
             "Path": "/sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us",
             "Values": [
@@ -53,7 +53,7 @@
             ],
             "ResetOnInit": true
         },
-	{
+        {
             "Name": "CPUBigClusterUpRateLimit",
             "Path": "/sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us",
             "Values": [
@@ -62,7 +62,7 @@
             ],
             "ResetOnInit": true
         },
-	{
+        {
             "Name": "CPUBigClusterDownRateLimit",
             "Path": "/sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us",
             "Values": [
@@ -175,25 +175,25 @@
             "Duration": 3000,
             "Value": "2314000"
         },
-	{
+        {
             "PowerHint": "LAUNCH",
             "Node": "CPULittleClusterUpRateLimit",
             "Duration": 3000,
             "Value": "1000"
         },
-	{
+        {
             "PowerHint": "LAUNCH",
             "Node": "CPULittleClusterDownRateLimit",
             "Duration": 3000,
             "Value": "10000"
         },
-	{
+        {
             "PowerHint": "LAUNCH",
             "Node": "CPUBigClusterUpRateLimit",
             "Duration": 3000,
             "Value": "1000"
         },
-	{
+        {
             "PowerHint": "LAUNCH",
             "Node": "CPUBigClusterDownRateLimit",
             "Duration": 3000,
