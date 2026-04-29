@@ -101,6 +101,15 @@
             "ResetOnInit": true
         },
         {
+            "Name": "UclampFGMin",
+            "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
+            "Values": [
+                "40",
+                "0"
+            ],
+            "ResetOnInit": true
+        },
+        {
             "Name": "UclampTALatency",
             "Path": "/dev/cpuset/top-app/uclamp.latency_sensitive",
             "Values": [
@@ -181,9 +190,9 @@
         },
         {
             "PowerHint": "LAUNCH",
-            "Node": "CPUMinFreq",
+            "Node": "GPUMinFreq",
             "Duration": 3000,
-            "Value": "2314000"
+            "Value": "455000"
         },
         {
             "PowerHint": "LAUNCH",
@@ -220,6 +229,12 @@
             "Node": "UclampTAMin",
             "Duration": 3000,
             "Value": "50"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "UclampFGMin",
+            "Duration": 3000,
+            "Value": "40"
         },
         {
             "PowerHint": "LAUNCH",
